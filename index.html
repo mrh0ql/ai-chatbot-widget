@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chatbot Widget Demo</title>
+  <style>
+    body { font-family: sans-serif; background: #111; color: #eee; margin: 0; padding: 60px 20px; text-align: center; }
+    h1 { color: #d4a017; }
+    code { background: #222; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>AI Chatbot Widget</h1>
+  <p>This is a demo page. The chat bubble appears in the bottom-right corner.</p>
+  <p>Embed it on any site with one line:</p>
+  <p><code>&lt;script src="widget.js" data-endpoint="/api/chat"&gt;&lt;/script&gt;</code></p>
+
+  <!-- The widget. Point data-endpoint at your backend that returns { reply: "..." } -->
+  <script src="widget.js" data-endpoint="/api/chat" data-title="Ask me anything"></script>
+</body>
+</html>
